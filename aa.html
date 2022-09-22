@@ -10,11 +10,26 @@
     <script>
      let a = prompt ('pobierz pierwszą  liczbę')
      let b = prompt ('pobierz drugą liczbę')
-     let wynik = parseInt(a) + parseInt(b)
-     console.log(wynik);
-     alert("wynik: " + wynik);
-     document.write("wynik: " + wynik);
+     let znak = prompt ('podaj znak działania ')
+     let wynik;
 
+     if(znak==='+')
+     {
+        wynik=parseInt(a)+parseInt(b);
+     }
+     
+        else if (znak==='-')
+    {
+        wynik=parseInt(a)-parseInt(b);
+
+    }
+     
+     else if (znak==='*')
+     {
+        wynik=parseInt(a)*parseInt(b);
+    
+     }
+     console.log(wynik)
 
     </script>
 </body>
